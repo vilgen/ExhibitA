@@ -28,10 +28,10 @@ public class Main {
 
 
         System.out.println("***********************************************************************");
-        /*Print the sortedOutput entry in the for each loop*/
+        /*Print the sortedOutput entry in the for each loop
         for(Map.Entry<Integer, Integer> entry:sortedOutput.entrySet()){
             System.out.println(entry.getKey() + " " + entry.getValue());
-        }
+        }*/
 
         CsvWriter csvWrite = new CsvWriter(sortedOutput);
         csvWrite.writeData();
