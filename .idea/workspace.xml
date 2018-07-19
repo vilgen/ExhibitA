@@ -8,12 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e74bf571-039e-4543-8797-6686ad92ac26" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExhibitA/CsvReader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExhibitA/CsvWriter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExhibitA/Data.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExhibitA/DataSorting.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExhibitA/Main$MyDate.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExhibitA/Main.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -364,12 +358,12 @@
       <workItem from="1531988859821" duration="224000" />
       <workItem from="1531989957666" duration="47000" />
       <workItem from="1531990057491" duration="381000" />
-      <workItem from="1531990531138" duration="197000" />
+      <workItem from="1531990531138" duration="611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4275000" />
+    <option name="totallyTimeSpent" value="4689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
