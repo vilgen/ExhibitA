@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class CsvWriter {
 
-    private static final String OUTPUT_PATH = "outputData.csv";
+    private static final String OUTPUT_PATH = "C:/outputData.csv";
     private static final String FILE_HEADER = "DISTINCT_PLAY_COUNT,CLIENT_COUNT";
     private static final String COMMA_DELIMITER = ",";
     private static final String NEW_LINE_SEPARATOR = "\n";

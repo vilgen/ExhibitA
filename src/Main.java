@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         /*Give file path and create an instance of CSVReader to read the file*/
-        String FilePath = "exhibita.csv";
+        String FilePath = "C:/exhibitA-input.csv";
         CsvReader newCsv = new CsvReader(FilePath);
 
         /*Call readData() method and take the returned list into a List of Data Class type*/
