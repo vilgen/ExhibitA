@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         /*Give file path and create an instance of CSVReader to read the file*/
-        String FilePath = "C:/exhibita.csv";
+        String FilePath = "C:/exhibitA-input.csv";
         CsvReader newCsv = new CsvReader(FilePath);
 
         /*Call readData() method and take the returned list into a List of Data Class type*/
@@ -28,10 +28,10 @@ public class Main {
 
 
         System.out.println("***********************************************************************");
-        /*Print the sortedOutput entry in the for each loop*/
+        /*Print the sortedOutput entry in the for each loop
         for(Map.Entry<Integer, Integer> entry:sortedOutput.entrySet()){
             System.out.println(entry.getKey() + " " + entry.getValue());
-        }
+        }*/
 
         CsvWriter csvWrite = new CsvWriter(sortedOutput);
         csvWrite.writeData();
