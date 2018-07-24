@@ -29,7 +29,7 @@ public class CsvWriter {
                 writer.write(entry.getValue().toString());
                 writer.append(NEW_LINE_SEPARATOR);
             }
-            System.out.println("Write Success!");
+            System.out.println("outputData.csv File: Write Success!");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -42,7 +42,6 @@ public class CsvWriter {
                 e.printStackTrace();
 
             }
-
         }
 
     }
