@@ -7,8 +7,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         /*Give file path and create an instance of CSVReader to read the file*/
-        String FilePath = "C:/exhibitA-input.csv";
-        CsvReader newCsv = new CsvReader(FilePath);
+        CsvReader newCsv = new CsvReader();
 
         /*Call readData() method and take the returned list into a List of Data Class type*/
         List<Data> resultList = newCsv.readData();
@@ -25,13 +24,6 @@ public class Main {
         /*Create an instance of DataSorting class to obtain the sorted and counted (desired) output*/
         DataSorting dataSorting = new DataSorting(dateFilteredList);
         Map<Integer, Integer> sortedOutput = dataSorting.sortData();
-
-
-        System.out.println("***********************************************************************");
-        /*Print the sortedOutput entry in the for each loop
-        for(Map.Entry<Integer, Integer> entry:sortedOutput.entrySet()){
-            System.out.println(entry.getKey() + " " + entry.getValue());
-        }*/
 
         CsvWriter csvWrite = new CsvWriter(sortedOutput);
         csvWrite.writeData();

@@ -6,25 +6,21 @@ import java.util.List;
 
 public class CsvReader {
 
-    private String FilePath;
-
-    //constructor for File location
-    public CsvReader(String FilePath){
-        this.FilePath = FilePath;
-    }
+    private static final String INPUT_FILE_PATH = "C:/exhibitA-input.csv";
 
     public List<Data> readData() throws IOException {
 
-        String csvFile = FilePath;
         List<Data> rowList = new LinkedList<>();
         String  line = "";
         String cvsSplitBy = "\t";
         String encoding = "UTF-8";
         BufferedReader br = null;
 
+
+
         try {
             int counterRow = 0;
-            br =  new BufferedReader(new InputStreamReader(new FileInputStream(csvFile), encoding));
+            br =  new BufferedReader(new InputStreamReader(new FileInputStream(INPUT_FILE_PATH), encoding));
             String title = br.readLine(); //take title line of the CSV into ..
             while ((line = br.readLine()) != null) {
                 //line=line.replaceAll(",,", ",NA,");
@@ -42,10 +38,10 @@ public class CsvReader {
                     Date date1 = new SimpleDateFormat("dd/MM/yyyy").parse(sDate1);
                     data.setTime(date1);
                 }catch (Exception e){
-                    e.printStackTrace();
+                    e.getMessage();
                 }
 
-                /*add the date from Data object to the rowList*/
+                //add the date from Data object to the rowList
                 rowList.add(data);
                 counterRow++; //count how many rows of the csv scanned
             }
@@ -53,6 +49,13 @@ public class CsvReader {
 
         } catch (Exception e) {
             e.printStackTrace();
+        }finally {
+            try {
+                if (br != null)
+                    br.close();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
         }
 
         return rowList;
